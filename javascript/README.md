@@ -1,8 +1,6 @@
 JavaScript Style Guide
 ==========
 
-[Sample](sample.js)
-
 * Prefer ES6 classes over prototypes.
 * Use strict equality checks (`===` and `!==`) except when comparing against
   (`null` or `undefined`).
@@ -21,6 +19,23 @@ JavaScript Style Guide
 * Avoid `var` to declare variables.
 * Use a [trailing comma] after each item in a multi-line array or object
   literal, including the last item.
+  
+### Sample
+  
+``` javascript
+  object = { spacing: true }
+
+class Cat {
+  canBark() {
+    return false;
+  }
+}
+
+const somePerson = {
+  name: 'Ralph',
+  company: 'thoughtbot',
+};
+```
 
 [template strings]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings
 [arrow functions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
